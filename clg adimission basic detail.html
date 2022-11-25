@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<style>  
+
+body{
+background-color: thistle;
+}
+p{padding-top:80px;text-align:center;}
+label{
+width:300px;
+display:inline-block;
+}
+.button {
+  background-color:slategrey;
+  width:100px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+.new:hover{
+background-color:green;
+}
+.new{
+width:200px;
+padding: 10px 32px;
+font-size:15px;
+background-color:gray;
+display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<form  action="putAdmission" method="post">  
+       <p>
+            <label class="button">NAME:</label><input type="text" maxlength="20" style="width:200px; padding: 15px 32px;" placeholder="Enter your Name" name="Name" required/><br/> <br/>  
+            <label class="button">AGE :</label><input type="number" style="width:200px; padding: 15px 32px;" min="18" max="50" placeholder="Enter your Age" name="Age" required/><br/><br/>  
+            <label class="button">GENDER:</label><input type="radio"  name="Gender" value="M" required/>Male
+                <input type="radio"  name="Gender" value="F" required/>Female <br/> <br/> <br/>  
+              <label class="button"> MARKS:</label><input type="number" style="width:200px; padding: 15px 32px;" min="300" max="600" placeholder="Enter your Marks" name="Marks" required/><br/> <br/>  
+              <label class="button">CUT-OFF:</label><input type="number" style="width:200px; padding: 15px 32px;" min="100" max="200" placeholder="Enter your cutOff" name="CutOff" required/><br/> <br/>  
+             <label class="button">HOSTELNEEDED:</label><input type="radio"  name="HostelNeeded" value="Y" required/>Yes
+                 <input type="radio"  name="HostelNeeded" value="N" required/>No<br/>  <br/>  
+            <button class="new"  type="reset" >Clear all</button>
+            <input  class="new"  type="submit" value="Continue"/>  
+            </p>
+</form>  
+
+
+
+ 
+</body>
+
+</html>
